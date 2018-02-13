@@ -8,6 +8,7 @@ add_executable(
         testsuite
         test.cpp
         Vendor/Entity/HeroTest.cpp
+        Vendor/Grid/CoordinateTest.cpp
 )
 
 target_link_libraries(
