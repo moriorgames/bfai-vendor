@@ -1,6 +1,6 @@
 
 #include <boost/test/unit_test.hpp>
-#include "../../../src/Vendor/Grid/Coordinate.h"
+#include "../../../src/Vendor/ValueObjects/Coordinate.h"
 
 using MoriorGames::Coordinate;
 

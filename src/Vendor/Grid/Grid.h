@@ -3,14 +3,13 @@
 
 #include <cmath>
 #include <vector>
-#include "Coordinate.h"
+#include "../ValueObjects/Coordinate.h"
 
 namespace MoriorGames {
 
 class Grid
 {
 public:
-
     static const int TILES_QUANTITY;
 
     static const int TILE_SIZE;
