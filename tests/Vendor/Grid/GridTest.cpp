@@ -10,3 +10,18 @@ BOOST_AUTO_TEST_CASE(test_grid_get_factor)
 
     BOOST_CHECK(obj->getFactor() == 0);
 }
+
+BOOST_AUTO_TEST_CASE(test_grid_can_create_grid_coordinates)
+{
+    auto obj = new Grid;
+    auto coordinates = obj->createGridCoordinates();
+
+    BOOST_CHECK(coordinates.size() == 119);
+}
+
+BOOST_AUTO_TEST_CASE(test_grid_can_print_all_coordinates)
+{
+    auto obj = new Grid;
+    obj->createGridCoordinates();
+    obj->printCoordinates();
+}
