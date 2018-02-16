@@ -9,19 +9,12 @@ const int Grid::TILE_SIZE = 26;
 
 const int Grid::CENTER_FACTOR = 150;
 
-std::vector<Coordinate *> Grid::createGridCoordinates()
+Grid::Grid()
 {
-    generateTiles();
-
-    return coordinates;
+    generateCoordinates();
 }
 
-int Grid::getFactor()
-{
-    return 0;
-}
-
-void Grid::generateTiles()
+void Grid::generateCoordinates()
 {
     int kTiles = TILES_QUANTITY;
     int quantityLines = kTiles * 2 + 1;
@@ -45,3 +38,4 @@ void Grid::printCoordinates()
     }
     std::cout << "Total: " << counter << std::endl;
 }
+

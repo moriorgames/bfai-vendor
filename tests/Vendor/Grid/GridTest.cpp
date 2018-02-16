@@ -14,14 +14,12 @@ BOOST_AUTO_TEST_CASE(test_grid_get_factor)
 BOOST_AUTO_TEST_CASE(test_grid_can_create_grid_coordinates)
 {
     auto obj = new Grid;
-    auto coordinates = obj->createGridCoordinates();
 
-    BOOST_CHECK(coordinates.size() == 119);
+    BOOST_CHECK(obj->getCoordinates().size() == 119);
 }
 
 BOOST_AUTO_TEST_CASE(test_grid_can_print_all_coordinates)
 {
     auto obj = new Grid;
-    obj->createGridCoordinates();
     obj->printCoordinates();
 }

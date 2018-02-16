@@ -12,23 +12,22 @@ class Grid
 {
 public:
     static const int TILES_QUANTITY;
-
     static const int TILE_SIZE;
-
     static const int CENTER_FACTOR;
 
 public:
-    std::vector<Coordinate *> createGridCoordinates();
-
-    virtual int getFactor();
-
+    Grid();
+    virtual int getFactor()
+    { return 0; }
+    std::vector<Coordinate *> getCoordinates()
+    { return coordinates; }
     void printCoordinates();
 
 private:
     std::vector<Coordinate *> coordinates;
     std::vector<int> lines{3, 2, 1, 0, -1, -2, -3};
 
-    void generateTiles();
+    void generateCoordinates();
 };
 
 }

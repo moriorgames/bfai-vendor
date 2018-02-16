@@ -3,6 +3,7 @@ add_library(
         bfai_vendor
         Vendor/Entity/Hero.cpp
         Vendor/Grid/Grid.cpp
+        Vendor/Services/PathFinder.cpp
         Vendor/ValueObjects/Coordinate.cpp
 )
 
