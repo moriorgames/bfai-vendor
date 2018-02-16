@@ -14,6 +14,19 @@ Grid::Grid()
     generateCoordinates();
 }
 
+Coordinate *Grid::findByXY(int x, int y)
+{
+    auto it = find_if(coordinates.begin(), coordinates.end(), [x, y](Coordinate *coordinate)
+    { return coordinate->x == x && coordinate->y == y; });
+
+    if (it != coordinates.end()) {
+
+        return *it;
+    }
+
+    return nullptr;
+}
+
 void Grid::generateCoordinates()
 {
     int kTiles = TILES_QUANTITY;
@@ -38,4 +51,3 @@ void Grid::printCoordinates()
     }
     std::cout << "Total: " << counter << std::endl;
 }
-

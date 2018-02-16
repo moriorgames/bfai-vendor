@@ -4,6 +4,7 @@
 #include <cmath>
 #include <iostream>
 #include <vector>
+#include <algorithm>
 #include "../ValueObjects/Coordinate.h"
 
 namespace MoriorGames {
@@ -21,6 +22,7 @@ public:
     { return 0; }
     std::vector<Coordinate *> getCoordinates()
     { return coordinates; }
+    Coordinate *findByXY(int x, int y);
     void printCoordinates();
 
 private:
