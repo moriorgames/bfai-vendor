@@ -3,7 +3,7 @@
 
 #include <string>
 #include <vector>
-#include "rapidjson/document.h"
+#include "json/document.h"
 
 namespace MoriorGames {
 

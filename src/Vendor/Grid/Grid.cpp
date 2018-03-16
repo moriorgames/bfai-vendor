@@ -9,11 +9,17 @@ const int Grid::TILE_SIZE = 26;
 
 const int Grid::CENTER_FACTOR = 150;
 
-Grid::Grid()
+std::vector<Coordinate *> Grid::createGridCoordinates()
 {
-    generateCoordinates();
+    generateTiles();
+
+    return coordinates;
 }
 
+/**
+ * @todo Theres a more performant way to access coordinates data. A 2 dimensional vector of ints
+ * we can check this if we use a lot this function and slows down the program.
+ */
 Coordinate *Grid::findByXY(int x, int y)
 {
     auto it = find_if(coordinates.begin(), coordinates.end(), [x, y](Coordinate *coordinate)
@@ -27,7 +33,12 @@ Coordinate *Grid::findByXY(int x, int y)
     return nullptr;
 }
 
-void Grid::generateCoordinates()
+int Grid::getFactor()
+{
+    return 0;
+}
+
+void Grid::generateTiles()
 {
     int kTiles = TILES_QUANTITY;
     int quantityLines = kTiles * 2 + 1;
