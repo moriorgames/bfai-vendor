@@ -1,6 +1,7 @@
 
 add_library(
         bfai_vendor
+        Vendor/Entity/BattleHero.cpp
         Vendor/Entity/Hero.cpp
         Vendor/Grid/Grid.cpp
         Vendor/Parsers/HeroParser.cpp

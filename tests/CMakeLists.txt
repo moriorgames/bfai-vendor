@@ -12,7 +12,7 @@ add_executable(
         Vendor/Parsers/HeroParserTest.cpp
         Vendor/Services/PathFinderTest.cpp
         Vendor/ValueObjects/CoordinateTest.cpp
-)
+        Vendor/Entity/BattleHeroTest.cpp)
 
 target_link_libraries(
         testsuite
