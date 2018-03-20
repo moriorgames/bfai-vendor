@@ -4,6 +4,7 @@ add_library(
         Vendor/Entity/Battle.cpp
         Vendor/Entity/BattleHero.cpp
         Vendor/Entity/Hero.cpp
+        Vendor/Factories/BattleFactory.cpp
         Vendor/Grid/Grid.cpp
         Vendor/Parsers/BattleParser.cpp
         Vendor/Parsers/HeroParser.cpp
