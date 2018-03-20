@@ -15,7 +15,7 @@ BOOST_AUTO_TEST_CASE(test_grid_can_create_grid_coordinates)
 {
     auto obj = new Grid;
 
-    BOOST_CHECK_EQUAL(obj->createGridCoordinates().size(), 119);
+    BOOST_CHECK_EQUAL(obj->getCoordinates().size(), 119);
 }
 
 BOOST_AUTO_TEST_CASE(test_grid_can_print_all_coordinates)
@@ -27,7 +27,6 @@ BOOST_AUTO_TEST_CASE(test_grid_can_print_all_coordinates)
 BOOST_AUTO_TEST_CASE(test_find_valid_coordinate_in_grid)
 {
     auto obj = new Grid;
-    obj->createGridCoordinates();
     auto coordinate = obj->findByXY(-1, 1);
 
     BOOST_CHECK_EQUAL(coordinate->x, -1);
