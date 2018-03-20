@@ -9,10 +9,12 @@ add_executable(
         test.cpp
         Vendor/Entity/HeroTest.cpp
         Vendor/Grid/GridTest.cpp
+        Vendor/Parsers/BattleParserTest.cpp
         Vendor/Parsers/HeroParserTest.cpp
         Vendor/Services/PathFinderTest.cpp
         Vendor/ValueObjects/CoordinateTest.cpp
-        Vendor/Entity/BattleHeroTest.cpp)
+        Vendor/Entity/BattleHeroTest.cpp
+)
 
 target_link_libraries(
         testsuite

@@ -18,7 +18,7 @@ BOOST_AUTO_TEST_CASE(test_is_able_to_parse_json_with_heroes_data)
     auto obj = new HeroParser(json);
     for (auto item:obj->parse()) {
         if (item->getId() == 1) {
-            BOOST_CHECK(item->getSlug() == "paul");
+            BOOST_CHECK_EQUAL(item->getSlug(), "jaimie");
         }
     }
 }

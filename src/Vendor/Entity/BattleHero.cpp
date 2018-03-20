@@ -12,6 +12,16 @@ BattleHero::BattleHero()
     coordinate = new Coordinate(0, 0);
 }
 
+int BattleHero::getBattleHeroId() const
+{
+    return battleHeroId;
+}
+
+void BattleHero::setBattleHeroId(int battleHeroId)
+{
+    this->battleHeroId = battleHeroId;
+}
+
 const std::string &BattleHero::getSide() const
 {
     return side;

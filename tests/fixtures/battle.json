@@ -1,0 +1,16 @@
+{
+  "heroes": [
+    {
+      "heroId": 1,
+      "side": "side-player",
+      "x": -7,
+      "y": 2
+    },
+    {
+      "heroId": 4,
+      "side": "side-player",
+      "x": -7,
+      "y": -2
+    }
+  ]
+}
