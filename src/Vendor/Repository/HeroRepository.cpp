@@ -3,9 +3,10 @@
 using MoriorGames::HeroRepository;
 using MoriorGames::Hero;
 
-HeroRepository::HeroRepository(HeroParser *heroParser)
+HeroRepository::HeroRepository(const std::string &json)
 {
-    for (auto hero:heroParser->parse()) {
+    auto parser = new HeroParser(json);
+    for (auto hero:parser->parse()) {
         heroes.push_back(hero);
     }
 }

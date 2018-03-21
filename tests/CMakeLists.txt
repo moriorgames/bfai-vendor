@@ -8,9 +8,11 @@ add_executable(
         testsuite
         test.cpp
         Vendor/Entity/HeroTest.cpp
+        Vendor/Factories/BattleFactoryTest.cpp
         Vendor/Grid/GridTest.cpp
         Vendor/Parsers/BattleParserTest.cpp
         Vendor/Parsers/HeroParserTest.cpp
+        Vendor/Repository/HeroRepositoryTest.cpp
         Vendor/Services/PathFinderTest.cpp
         Vendor/ValueObjects/CoordinateTest.cpp
         Vendor/Entity/BattleHeroTest.cpp

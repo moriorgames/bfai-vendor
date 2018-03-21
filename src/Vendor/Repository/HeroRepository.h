@@ -9,7 +9,7 @@ namespace MoriorGames {
 class HeroRepository
 {
 public:
-    explicit HeroRepository(HeroParser *);
+    explicit HeroRepository(const std::string &json);
     Hero *findById(int id);
 
 private:

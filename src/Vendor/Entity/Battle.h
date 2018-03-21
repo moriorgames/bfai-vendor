@@ -14,13 +14,12 @@ public:
     BattleHero *getActiveHero();
     void nextHero();
     void addTurn();
+    void print();
 
 private:
     std::vector<BattleHero *> heroes;
     int activeHero = 0;
     int turn = 0;
-
-    void print();
 };
 
 }

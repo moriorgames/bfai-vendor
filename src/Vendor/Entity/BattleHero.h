@@ -32,6 +32,7 @@ public:
     void setCoordinate(Coordinate *);
     Coordinate *getCoordinate() const;
 
+    void copy(Hero *);
     void print();
 };
 

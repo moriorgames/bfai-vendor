@@ -35,7 +35,7 @@ void BattleParser::addHeroData(Battle *battle, const rapidjson::Value &data)
     auto hero = new BattleHero;
     auto coordinate = new Coordinate(getInt(data, "x"), getInt(data, "y"));
 
-    hero->setId(getInt(data, "heroId"));
+    hero->setId(getInt(data, "id"));
     hero->setSide(getString(data, "side"));
     hero->setCoordinate(coordinate);
 
